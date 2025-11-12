@@ -1,14 +1,7 @@
 # BREAKOUT
 ###### Trabajo Practico Evaluativo Proyecto Unity 2D
-- Apellido y nombre: Arraya Quispe Cristian Javier
-- Lu: 000651
-- Curso: Programacion de videojuego 1
-- Profesor: Ariel Alejandro Vega
-- Profesor de TP: Samuel Bustamante
-- Version de unity:  2022.3.5f1
-  
 > [!CAUTION]
-> _Se recomienda tener la version unity 2022.3.5f1 o superior para evitar errores al ejecutar el juego._
+> _Se recomienda tener la version unity 2022.3.8f1 o superior para evitar errores al ejecutar el juego._
 
 ###### OBJETIVO:
 El objetivo del Breakout es eliminar todos los ladrillos en la parte superior de la pantalla golpeandolos con una pelota y evitar que la pelota caiga fuera de la pantalla
