@@ -5,38 +5,36 @@ using UnityEngine.UIElements;
 
 public class Brick : MonoBehaviour
 {
-    //GameObject gameManagerObj;
     GameManager gameManager;
-    [SerializeField] GameObject explosionPrefab;//Para la animacion de la explosion
-    [SerializeField] GameObject[] powerUpPrefabs;//Guardar los power up en el script
-    
+    [SerializeField] GameObject explosionPrefab;
+    [SerializeField] GameObject[] powerUpPrefabs;
+
     private void Start()
     {
-        
-        gameManager = FindObjectOfType<GameManager>();//Es util por solo existirá un componente de este tipo en todo el juego
-        if (gameManager != null)
+        gameManager = FindObjectOfType<GameManager>();
+        if (gameManager != null) 
         {
-            gameManager.BricksOnLevel++;//Nos aseguramos que este usando la propiedad
-        }
+           gameManager.BricksOnLevel++;
+        }    
     }
+
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        Instantiate(explosionPrefab, transform.position, Quaternion.identity);//Crear la animacion de la explosion con cada bloque destruido
-        if (gameManager != null)//Comprobar que exista, en caso que si restara a BricksOnLevel
+        Instantiate(explosionPrefab, transform.position, Quaternion.identity);
+
+        if (gameManager != null)
         {
-            gameManager.BricksOnLevel--;//comentario linea 30
+            gameManager.BricksOnLevel--;
             gameManager.AddScore(1);
         }
-        if (gameManager.bigSize == false && gameManager.bigSpeed == false) 
+
+        if (!gameManager.bigSize && !gameManager.bigSpeed)
         {
-            //Numeros aleatorio
             int numeroRandom = Random.Range(0, 100);
-            if (numeroRandom < 40)//Es como tener un 40% de probabilidad que aparesca un power up
+            if (numeroRandom < 40)
             {
-                /*Crear un powerUp al destruir un bloque*/
                 int powerUpRandom = Random.Range(0, powerUpPrefabs.Length);
                 Instantiate(powerUpPrefabs[powerUpRandom], transform.position, Quaternion.identity);
-
             }
         }
         Destroy(gameObject);

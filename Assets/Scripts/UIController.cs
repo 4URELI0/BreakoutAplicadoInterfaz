@@ -1,8 +1,7 @@
-using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.SceneManagement;//Es una función que facilita el acceso a clases y funciones relacionada con la gestion de escena
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class UIController : MonoBehaviour
@@ -11,52 +10,98 @@ public class UIController : MonoBehaviour
     [SerializeField] GameObject winnerPanel;
     [SerializeField] GameObject[] livesImg;
     [SerializeField] Text gameTimeText;
+    [SerializeField] Text scoreText;
+    [SerializeField] Text highScoreText;
+    [SerializeField] Text bestTimeText;
     [SerializeField] AudioClip buttonPress;
 
-    [SerializeField] Text scoreText;
-    /*Métodos que usaremos para llamar desde GameManager*/
+    // Actualiza el tiempo de la partida en pantalla
     public void UpdateGameTimeUI(float time)
     {
         int minutes = Mathf.FloorToInt(time / 60);
         int seconds = Mathf.FloorToInt(time % 60);
         gameTimeText.text = $"{minutes:0}:{seconds:00}";
     }
-    public void ActivateLosePanel()//Misma función que ActivateWinnerPanel pero de derrota
+
+    // Activa panel de derrota
+    public void ActivateLosePanel()
     {
-        losePanel.SetActive(true);  
+        losePanel.SetActive(true);
     }
-    public void ActivateWinnerPanel(float gameTime)//Su cargo sera mostrar la pantalla de winner que por defecto esta desactivada pero si cumple la condición la pone en true
+
+    // Activa panel de victoria y muestra tiempo final y mejor tiempo
+    public void ActivateWinnerPanel(float finalTime, int bestTime)
     {
         winnerPanel.SetActive(true);
-        int minutes = Mathf.FloorToInt(gameTime / 60);
-        int seconds = Mathf.FloorToInt(gameTime % 60);
 
-        gameTimeText.text = $"GameTime: {minutes:0}:{seconds:00}";
+        // Mostrar tiempo de la partida
+        int minutes = Mathf.FloorToInt(finalTime / 60);
+        int seconds = Mathf.FloorToInt(finalTime % 60);
+        gameTimeText.text = $"{minutes:0}:{seconds:00}";
+
+        // Mostrar mejor tiempo
+        UpdateBestTime(bestTime);
     }
-    public void ResetCurrentScene()//Se encargar de reiniciar la escena del juego
-    {
-        SceneManager.LoadScene("Game");//Accedemos a la clase SceneManager para ejecutar el metodo LoadScene y nos pide como parámetro el nombre de la escena que deseamos cargar
-        Debug.Log("Reiniciar el juego");
-        FindObjectOfType<AudioController>().PlaySfx(buttonPress);
-    }
-    public void GoToMainMenu()
-    {
-        SceneManager.LoadScene("MainMenu");
-        Debug.Log("Menu");
-    }
+
+    // Actualiza las vidas del jugador en UI
     public void UpdateUILives(byte currentLives)
     {
         for (int i = 0; i < livesImg.Length; i++)
         {
-            if (i >= currentLives)//Usamos una sentencia if para preguntar si nuestra cantidad actual de vida es mayor o igual a nuestro índice
-            {
-                livesImg[i].SetActive(false);//Si es verdadera ocultamos el elemento 
-            }
-
+            livesImg[i].SetActive(i < currentLives);
         }
     }
-    public void UpdateScore(int newScore) 
+
+    // Actualiza puntaje en UI
+    public void UpdateScore(int newScore)
     {
         scoreText.text = $"{newScore}";
+    }
+
+    // Actualiza high score en UI
+    public void UpdateHighScore(int bestScore)
+    {
+        highScoreText.text = bestScore.ToString();
+    }
+
+    // Muestra null si nunca hubo high score
+    public void UpdateHighScoreTextNull()
+    {
+        highScoreText.text = "null";
+    }
+
+    // Actualiza mejor tiempo en UI
+    public void UpdateBestTime(int bestTime)
+    {
+        if (bestTime == int.MaxValue)
+        {
+            bestTimeText.text = "null";
+        }
+        else
+        {
+            int minutes = bestTime / 60;
+            int seconds = bestTime % 60;
+            bestTimeText.text = $"{minutes:0}:{seconds:00}";
+        }
+    }
+
+    // Muestra null si nunca hubo mejor tiempo
+    public void UpdateBestTimeTextNull()
+    {
+        bestTimeText.text = "null";
+    }
+
+    // Reinicia la escena actual
+    public void ResetCurrentScene()
+    {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+        FindObjectOfType<AudioController>().PlaySfx(buttonPress);
+    }
+
+    // Volver al menú principal
+    public void GoToMainMenu()
+    {
+        SceneManager.LoadScene("MainMenu");
+        FindObjectOfType<AudioController>().PlaySfx(buttonPress);
     }
 }
