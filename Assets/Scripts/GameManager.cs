@@ -11,11 +11,25 @@ public class GameManager : MonoBehaviour
 
     public bool bigSize;//Movemos el bigSize al GameManager para tener registro sobre el y lo mismo con bigSpeed
     public bool bigSpeed;
-    
+    bool timeStarted = false;
 
     [SerializeField] byte bricksOnLevel;//Va a llevar registros sobre los bloques, eliminamos public ya que no afectara a la variable desde otro script   
-  
     
+    int score = 0;
+
+    private void Update()
+    {
+        if (timeStarted)
+        {
+            float elpased = Time.time - gameTime;
+            FindObjectOfType<UIController>().UpdateGameTimeUI(elpased);
+        }
+    }
+    public void AddScore(int amount) 
+    {
+        score += amount;
+        FindObjectOfType<UIController>().UpdateScore(score);
+    }
     public byte BricksOnLevel{
         get => bricksOnLevel;
         //Vamos a abrir un nuevo scope para lograr algo mas interesante
@@ -27,8 +41,8 @@ public class GameManager : MonoBehaviour
                 Debug.Log("MISSION PASSED!");
                 Destroy(GameObject.Find("Ball"));//Va a buscar el objeto "Ball" que es nuestra pelota y la va a destruir si es que se cumple la sentencia de que no quede ningún bloque                                
                 //MOSTRAR PANTALLA DE VICTORIA
-                gameTime = Time.time * gameTime;
-                FindObjectOfType<UIController>().ActivateWinnerPanel(gameTime);
+                float finalTime = Time.time - gameTime;
+                FindObjectOfType<UIController>().ActivateWinnerPanel(finalTime);
                 //TODO MEDIR TIEMPO DE JUEGO
                 gameTime = Time.time - gameTime;//Calculamos el tiempo transcurrido con una resta del tiempo actual del juego - gameTime, que corresponde al punto que lanzamos la bola por primera vez
             }
@@ -77,9 +91,13 @@ public class GameManager : MonoBehaviour
             ballOnPlay = value;
             if (ballOnPlay == true)
             {
-                Debug.Log("Lanzar la bola");
-                FindObjectOfType<Ball>().LaunchBall();//Buscamos al componente de la bola y ejecutamos la metodo LaunchBall
-            }//B) Luego GameManager le dice al script ball que ejecute el metodo que hace el lanzamiento de la bola
+                FindObjectOfType<Ball>().LaunchBall();
+                if (!timeStarted)
+                {
+                    gameTime = Time.time;
+                    timeStarted = true;
+                }
+            }
         }
     }
 }

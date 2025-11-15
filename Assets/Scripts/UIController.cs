@@ -12,7 +12,15 @@ public class UIController : MonoBehaviour
     [SerializeField] GameObject[] livesImg;
     [SerializeField] Text gameTimeText;
     [SerializeField] AudioClip buttonPress;
+
+    [SerializeField] Text scoreText;
     /*Métodos que usaremos para llamar desde GameManager*/
+    public void UpdateGameTimeUI(float time)
+    {
+        int minutes = Mathf.FloorToInt(time / 60);
+        int seconds = Mathf.FloorToInt(time % 60);
+        gameTimeText.text = $"{minutes:0}:{seconds:00}";
+    }
     public void ActivateLosePanel()//Misma función que ActivateWinnerPanel pero de derrota
     {
         losePanel.SetActive(true);  
@@ -20,7 +28,10 @@ public class UIController : MonoBehaviour
     public void ActivateWinnerPanel(float gameTime)//Su cargo sera mostrar la pantalla de winner que por defecto esta desactivada pero si cumple la condición la pone en true
     {
         winnerPanel.SetActive(true);
-        gameTimeText.text = "GameTime:" + gameTime + Math.Floor(gameTime) + "s";//transformara el numero que nos daba en float a entero 
+        int minutes = Mathf.FloorToInt(gameTime / 60);
+        int seconds = Mathf.FloorToInt(gameTime % 60);
+
+        gameTimeText.text = $"GameTime: {minutes:0}:{seconds:00}";
     }
     public void ResetCurrentScene()//Se encargar de reiniciar la escena del juego
     {
@@ -43,5 +54,9 @@ public class UIController : MonoBehaviour
             }
 
         }
+    }
+    public void UpdateScore(int newScore) 
+    {
+        scoreText.text = $"{newScore}";
     }
 }

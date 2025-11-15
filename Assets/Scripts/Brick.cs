@@ -25,6 +25,7 @@ public class Brick : MonoBehaviour
         if (gameManager != null)//Comprobar que exista, en caso que si restara a BricksOnLevel
         {
             gameManager.BricksOnLevel--;//comentario linea 30
+            gameManager.AddScore(1);
         }
         if (gameManager.bigSize == false && gameManager.bigSpeed == false) 
         {
