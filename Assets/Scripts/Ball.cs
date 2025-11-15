@@ -37,7 +37,7 @@ public class Ball : MonoBehaviour
         /*Colisi�n para el sistema de derrota del juego*/
         if (collision.transform.CompareTag("LimiteMuerte"))//Verifica si la bola colisiono con al limite de abajo o por si tag LimiteMuerte y si es verdadero salta el mensaje
         {
-            Debug.Log("Colisi�n con el limite de abajo");
+            Debug.Log("Colision con el limite de abajo");
             FindObjectOfType<AudioController>().PlaySfx(loseLife);
             if (gameManager != null)//Lo utilizamos con if != null para verificar que exista un componente gameManager, es una seguridad
             {
@@ -47,7 +47,7 @@ public class Ball : MonoBehaviour
         if (collision.transform.CompareTag("Player"))
         {
             FindObjectOfType<AudioController>().PlaySfx(paddleBounce);
-            Debug.Log("verificaci�n de clip");
+            Debug.Log("verificacion de clip");
         }
         if (collision.transform.CompareTag("Brick"))
         {
