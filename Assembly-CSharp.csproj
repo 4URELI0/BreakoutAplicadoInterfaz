@@ -71,6 +71,7 @@
     <Compile Include="Assets\Scripts\GameManager.cs" />
     <Compile Include="Assets\Scripts\PowerUp.cs" />
     <Compile Include="Assets\Scripts\AudioController.cs" />
+    <Compile Include="Assets\Scripts\EndGameUI.cs" />
     <Compile Include="Assets\Scripts\TitleAnimation.cs" />
   </ItemGroup>
   <ItemGroup>
