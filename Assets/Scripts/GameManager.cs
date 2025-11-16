@@ -18,9 +18,11 @@ public class GameManager : MonoBehaviour
 
     private bool timerStarted = false;
     private bool gameFinished = false;
-    private float startTime;
+    private float timer = 0f;
 
-    // Propiedad para controlar los bloques restantes
+    public static int finalScore;
+    public static int finalTime;
+
     public byte BricksOnLevel
     {
         get => bricksOnLevel;
@@ -31,20 +33,23 @@ public class GameManager : MonoBehaviour
             if (bricksOnLevel == 0 && !gameFinished)
             {
                 gameFinished = true;
-                int finalTime = Mathf.RoundToInt(Time.timeSinceLevelLoad - startTime);
+                finalScore = score;
+                finalTime = Mathf.RoundToInt(timer);
+
                 int bestTime = PlayerPrefs.GetInt("BestTime", int.MaxValue);
+
                 if (finalTime < bestTime)
                 {
                     bestTime = finalTime;
-                    PlayerPrefs.SetInt("BestTime", bestTime); 
+                    PlayerPrefs.SetInt("BestTime", bestTime);
                 }
+
                 PlayerPrefs.SetInt("HasPlayedBeforeTime", 1);
+
                 FindObjectOfType<UIController>().ActivateWinnerPanel(finalTime, bestTime);
+
                 GameObject ball = GameObject.Find("Ball");
-                if (ball != null) 
-                {
-                   Destroy(ball);
-                } 
+                if (ball != null) Destroy(ball);
             }
         }
     }
@@ -60,10 +65,14 @@ public class GameManager : MonoBehaviour
             if (playerLives == 0)
             {
                 gameFinished = true;
+
+                finalScore = score;
+                finalTime = Mathf.RoundToInt(timer);
+
                 GameObject ball = GameObject.Find("Ball");
                 if (ball != null) Destroy(ball);
+
                 FindObjectOfType<UIController>().ActivateLosePanel();
-                PlayerPrefs.SetInt("HasPlayedBefore", 1);
             }
             else
             {
@@ -71,6 +80,7 @@ public class GameManager : MonoBehaviour
             }
         }
     }
+
     public bool GameStarted
     {
         get => gameStarted;
@@ -79,20 +89,20 @@ public class GameManager : MonoBehaviour
             gameStarted = value;
             if (!timerStarted && !gameFinished)
             {
-                startTime = Time.timeSinceLevelLoad;
                 timerStarted = true;
             }
         }
     }
+
     public bool BallOnPlay
     {
         get => ballOnPlay;
         set
         {
             ballOnPlay = value;
+
             if (ballOnPlay && !timerStarted)
             {
-                startTime = Time.timeSinceLevelLoad;
                 timerStarted = true;
             }
 
@@ -105,11 +115,8 @@ public class GameManager : MonoBehaviour
 
     private void Start()
     {
-        // Iniciar timer
-        startTime = Time.timeSinceLevelLoad;
         timerStarted = true;
 
-        // Cargar mejor tiempo guardado
         int hasPlayedTime = PlayerPrefs.GetInt("HasPlayedBeforeTime", 0);
         if (hasPlayedTime == 0)
         {
@@ -117,12 +124,10 @@ public class GameManager : MonoBehaviour
         }
         else
         {
-            // Obtener mejor tiempo como entero
             int bestTime = PlayerPrefs.GetInt("BestTime", int.MaxValue);
             FindObjectOfType<UIController>().UpdateBestTime(bestTime);
         }
 
-        // Cargar high score
         int hasPlayed = PlayerPrefs.GetInt("HasPlayedBefore", 0);
         if (hasPlayed == 1)
         {
@@ -139,8 +144,9 @@ public class GameManager : MonoBehaviour
     {
         if (timerStarted && !gameFinished)
         {
-            float elapsed = Time.timeSinceLevelLoad - startTime;
-            FindObjectOfType<UIController>().UpdateGameTimeUI(elapsed);
+            timer += Time.deltaTime;
+            Debug.Log("Timer: " + timer);
+            FindObjectOfType<UIController>().UpdateGameTimeUI(timer);
         }
     }
 
