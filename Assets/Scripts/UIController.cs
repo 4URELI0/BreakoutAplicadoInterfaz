@@ -46,10 +46,7 @@ public class UIController : MonoBehaviour
     // Actualiza las vidas del jugador en UI
     public void UpdateUILives(byte currentLives)
     {
-        for (int i = 0; i < livesImg.Length; i++)
-        {
-            livesImg[i].SetActive(i < currentLives);
-        }
+
     }
 
     // Actualiza puntaje en UI

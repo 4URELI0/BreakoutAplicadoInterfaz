@@ -60,15 +60,12 @@ public class GameManager : MonoBehaviour
         set
         {
             playerLives = value;
+
             FindObjectOfType<UIController>().UpdateUILives(playerLives);
 
             if (playerLives == 0)
             {
-                gameFinished = true;
-
-                finalScore = score;
-                finalTime = Mathf.RoundToInt(timer);
-
+                // Game Over
                 GameObject ball = GameObject.Find("Ball");
                 if (ball != null) Destroy(ball);
 
@@ -76,7 +73,8 @@ public class GameManager : MonoBehaviour
             }
             else
             {
-                FindAnyObjectByType<Ball>()?.ResetBall();
+                // RESETEO DE LA PELOTA (ESTO FALTABA)
+                FindObjectOfType<Ball>().ResetBall();
             }
         }
     }
@@ -145,7 +143,6 @@ public class GameManager : MonoBehaviour
         if (timerStarted && !gameFinished)
         {
             timer += Time.deltaTime;
-            Debug.Log("Timer: " + timer);
             FindObjectOfType<UIController>().UpdateGameTimeUI(timer);
         }
     }

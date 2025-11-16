@@ -1988,7 +1988,7 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: -0.000000014901161, y: 0.00034986436}
+  m_Offset: {x: -0.0062417984, y: 0.004511118}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -1998,7 +1998,7 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 0.64588237, y: 0.21879727}
+  m_Size: {x: 1.1909988, y: 0.2437644}
   m_EdgeRadius: 0
 --- !u!50 &386632904
 Rigidbody2D:
@@ -3485,7 +3485,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: asdasd
+  m_Text: 
 --- !u!222 &811993433
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -3792,7 +3792,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: asdasd
+  m_Text: 
 --- !u!222 &889384391
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -4790,7 +4790,7 @@ CircleCollider2D:
   m_CompositeOperation: 0
   m_CompositeOrder: 0
   m_Offset: {x: 0, y: 0}
-  m_Radius: 0.04
+  m_Radius: 0.13280413
 --- !u!50 &1207456351
 Rigidbody2D:
   serializedVersion: 5
@@ -5956,14 +5956,14 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1512969567}
   m_CullTransparentMesh: 1
---- !u!1 &1554110568 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 5142394917656313076, guid: 0a8338858026a044687cf92697a1776c, type: 3}
-  m_PrefabInstance: {fileID: 6333159260648812922}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &1554110569 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5886420993573443225, guid: 0a8338858026a044687cf92697a1776c, type: 3}
+  m_PrefabInstance: {fileID: 6333159260648812922}
+  m_PrefabAsset: {fileID: 0}
+--- !u!212 &1554110570 stripped
+SpriteRenderer:
+  m_CorrespondingSourceObject: {fileID: 7822242895149169409, guid: 0a8338858026a044687cf92697a1776c, type: 3}
   m_PrefabInstance: {fileID: 6333159260648812922}
   m_PrefabAsset: {fileID: 0}
 --- !u!4 &1571341719 stripped
@@ -6022,7 +6022,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: asdasd
+  m_Text: 
 --- !u!222 &1572052567
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -6199,9 +6199,9 @@ MonoBehaviour:
   losePanel: {fileID: 349413184}
   winnerPanel: {fileID: 2052099410}
   livesImg:
-  - {fileID: 1554110568}
-  - {fileID: 2021665300}
-  - {fileID: 1646190156}
+  - {fileID: 1554110570}
+  - {fileID: 2021665301}
+  - {fileID: 1646190158}
   gameTimeText: {fileID: 889384390}
   scoreText: {fileID: 1572052566}
   highScoreText: {fileID: 811993432}
@@ -6918,14 +6918,14 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0a8338858026a044687cf92697a1776c, type: 3}
---- !u!1 &1646190156 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 5142394917656313076, guid: 0a8338858026a044687cf92697a1776c, type: 3}
-  m_PrefabInstance: {fileID: 1646190155}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &1646190157 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5886420993573443225, guid: 0a8338858026a044687cf92697a1776c, type: 3}
+  m_PrefabInstance: {fileID: 1646190155}
+  m_PrefabAsset: {fileID: 0}
+--- !u!212 &1646190158 stripped
+SpriteRenderer:
+  m_CorrespondingSourceObject: {fileID: 7822242895149169409, guid: 0a8338858026a044687cf92697a1776c, type: 3}
   m_PrefabInstance: {fileID: 1646190155}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1653270051
@@ -8447,9 +8447,9 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 5886420993573443225, guid: 0a8338858026a044687cf92697a1776c, type: 3}
   m_PrefabInstance: {fileID: 2021665298}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &2021665300 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 5142394917656313076, guid: 0a8338858026a044687cf92697a1776c, type: 3}
+--- !u!212 &2021665301 stripped
+SpriteRenderer:
+  m_CorrespondingSourceObject: {fileID: 7822242895149169409, guid: 0a8338858026a044687cf92697a1776c, type: 3}
   m_PrefabInstance: {fileID: 2021665298}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &2022734287
@@ -9252,7 +9252,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: asdasd
+  m_Text: 
 --- !u!222 &2103120994
 CanvasRenderer:
   m_ObjectHideFlags: 0
