@@ -8,7 +8,7 @@ public class UIController : MonoBehaviour
 {
     [SerializeField] GameObject losePanel;
     [SerializeField] GameObject winnerPanel;
-    [SerializeField] GameObject[] livesImg;
+    [SerializeField] SpriteRenderer[] lifeSprites;
     [SerializeField] Text gameTimeText;
     [SerializeField] Text scoreText;
     [SerializeField] Text highScoreText;
@@ -46,7 +46,14 @@ public class UIController : MonoBehaviour
     // Actualiza las vidas del jugador en UI
     public void UpdateUILives(byte currentLives)
     {
-
+        for (int i = 0; i < lifeSprites.Length; i++)
+        {
+            lifeSprites[i].color = Color.green;
+        }
+        for (int i = currentLives; i < lifeSprites.Length; i++)
+        {
+            lifeSprites[i].color = Color.red;
+        }
     }
 
     // Actualiza puntaje en UI

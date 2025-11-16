@@ -3,7 +3,7 @@
   "WorkspaceRootPath": "C:\\Users\\CRISTIAN\\Desktop\\Unity\\BreakoutAplicadoInterfaz\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{4FF1500C-1445-928B-46C3-D0DE853AD3E8}|Assembly-CSharp.csproj|C:\\Users\\CRISTIAN\\Desktop\\Unity\\BreakoutAplicadoInterfaz\\assets\\scripts\\ball.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{4FF1500C-1445-928B-46C3-D0DE853AD3E8}|Assembly-CSharp.csproj|c:\\users\\cristian\\desktop\\unity\\breakoutaplicadointerfaz\\assets\\scripts\\ball.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{4FF1500C-1445-928B-46C3-D0DE853AD3E8}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\ball.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -15,7 +15,7 @@
       "RelativeMoniker": "D:0:0:{4FF1500C-1445-928B-46C3-D0DE853AD3E8}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\gamemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4FF1500C-1445-928B-46C3-D0DE853AD3E8}|Assembly-CSharp.csproj|c:\\users\\cristian\\desktop\\unity\\breakoutaplicadointerfaz\\assets\\scripts\\uicontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{4FF1500C-1445-928B-46C3-D0DE853AD3E8}|Assembly-CSharp.csproj|C:\\Users\\CRISTIAN\\Desktop\\Unity\\BreakoutAplicadoInterfaz\\assets\\scripts\\uicontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{4FF1500C-1445-928B-46C3-D0DE853AD3E8}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\uicontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -49,7 +49,7 @@
               "RelativeDocumentMoniker": "Assets\\Scripts\\UIController.cs",
               "ToolTip": "C:\\Users\\CRISTIAN\\Desktop\\Unity\\BreakoutAplicadoInterfaz\\Assets\\Scripts\\UIController.cs",
               "RelativeToolTip": "Assets\\Scripts\\UIController.cs",
-              "ViewState": "AgIAAAQAAAAAAAAAAAAYwDAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADMAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-11-16T00:18:14.546Z",
               "EditorCaption": ""
