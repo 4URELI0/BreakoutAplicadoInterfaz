@@ -6,7 +6,15 @@ using UnityEngine.SceneManagement;
 public class MenuOpciones : MonoBehaviour
 {
     [SerializeField] AudioMixer audioMixer;
-    [SerializeField] float volumenActual;
+    private float volumenActual;
+
+    void Awake()
+    {
+        float currentVolume;
+        audioMixer.GetFloat("Volumen", out currentVolume);
+        Debug.Log("Volumen Actual: del mixer " + currentVolume);
+        volumenActual = currentVolume;
+    }
 
     public void AddVolume(float volumen)
     {
