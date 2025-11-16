@@ -31,19 +31,32 @@ public class Ball : MonoBehaviour
     }
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        Debug.Log("La bola colisiono con: " + collision.transform.name);//collision.transform.name <- Nos permite saber con que objeto colisiono la bola
+        Debug.Log("La bola colisiono con: " + collision.transform.name);
         moveDirection = Vector2.Reflect(currentVelocity, collision.GetContact(0).normal);
         rigidBody2D.linearVelocity = moveDirection;
-        /*Colisi�n para el sistema de derrota del juego*/
-        if (collision.transform.CompareTag("LimiteMuerte"))//Verifica si la bola colisiono con al limite de abajo o por si tag LimiteMuerte y si es verdadero salta el mensaje
+
+        if (collision.transform.CompareTag("LimiteMuerte"))
         {
-            Debug.Log("Colision con el limite de abajo");
+            Debug.Log("Colision con el limite MUERTE");
             FindObjectOfType<AudioController>().PlaySfx(loseLife);
-            if (gameManager != null)//Lo utilizamos con if != null para verificar que exista un componente gameManager, es una seguridad
+
+            // Asegurarnos de tener referencia al GameManager
+            if (gameManager == null)
             {
-             gameManager.PlayerLives--;
+                gameManager = FindObjectOfType<GameManager>();
+            }
+
+            if (gameManager != null)
+            {
+                // Decrementa vidas en GameManager -> este se encargará de llamar ResetBall() si corresponde
+                gameManager.PlayerLives--;
+            }
+            else
+            {
+                Debug.LogWarning("Ball: no se encontró GameManager al colisionar con LimiteMuerte");
             }
         }
+
         if (collision.transform.CompareTag("Player"))
         {
             FindObjectOfType<AudioController>().PlaySfx(paddleBounce);
@@ -57,17 +70,30 @@ public class Ball : MonoBehaviour
     }
     public void LaunchBall()
     {
-     transform.SetParent(null);//Utilizamos este c�digo para decir que la bola ya no es hijo del paddle en el momento de ser lanzada; Surg�a el problema de que la bola segu�a al paddle cuando es lanzada
-     rigidBody2D.linearVelocity = Vector2.up * speed;//No utilizamos el deltaTime por que, por que el motor de f�sica tiene tiempos delta definido y constantes que no dependen de la velocidad de la computadora 
+     transform.SetParent(null);//Utilizamos este codigo para decir que la bola ya no es hijo del paddle en el momento de ser lanzada; Surg�a el problema de que la bola segu�a al paddle cuando es lanzada
+     rigidBody2D.linearVelocity = Vector2.up * speed;//No utilizamos el deltaTime por que, por que el motor de fisica tiene tiempos delta definido y constantes que no dependen de la velocidad de la computadora 
     }
     public void ResetBall()
     {
-        rigidBody2D.linearVelocity = Vector3.zero;//Vamos a eliminar la velocidad de la bola
-        Transform paddle = GameObject.Find("Paddle").transform;
-        transform.SetParent(paddle);//Le hacemos hijo del paddle nuevamente
-        Vector2 ballPosition = paddle.position;//Guardaremos la posici�n del paddle 
-        ballPosition.y += 0.3f;//Aumentarle un poco la posici�n de la bola
-        transform.position = ballPosition;//Le asignamos la posici�n que hicimos en la ballPosition a la bola
-        gameManager.BallOnPlay = false;//Le decimo al GameManager que la bola no esta en el juego para para que permita hacer otro lanzamiento
+        rigidBody2D.linearVelocity = Vector2.zero;
+        rigidBody2D.angularVelocity = 0f;
+
+        GameObject paddleObj = GameObject.FindWithTag("Player");
+
+        if (paddleObj == null)
+        {
+            Debug.LogError("No se encontró Paddle con tag Player");
+            return;
+        }
+
+        Transform paddle = paddleObj.transform;
+
+        transform.SetParent(paddle);
+
+        Vector2 pos = paddle.position;
+        pos.y += 0.3f;
+        transform.position = pos;
+
+        gameManager.BallOnPlay = false;
     }
 }

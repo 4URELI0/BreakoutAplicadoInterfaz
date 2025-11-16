@@ -317,6 +317,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Brick (26)
       objectReference: {fileID: 0}
+    - target: {fileID: 5891234994536302910, guid: fd18a2009894ba44e9e5016c495b5feb, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6327540719420737374, guid: fd18a2009894ba44e9e5016c495b5feb, type: 3}
       propertyPath: m_Sprite
       value: 
@@ -416,6 +420,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Brick (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 5891234994536302910, guid: fd18a2009894ba44e9e5016c495b5feb, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6327540719420737374, guid: fd18a2009894ba44e9e5016c495b5feb, type: 3}
       propertyPath: m_Sprite
       value: 
@@ -509,6 +517,10 @@ PrefabInstance:
     - target: {fileID: 5891234994536302910, guid: fd18a2009894ba44e9e5016c495b5feb, type: 3}
       propertyPath: m_Name
       value: Brick (6)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5891234994536302910, guid: fd18a2009894ba44e9e5016c495b5feb, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6327540719420737374, guid: fd18a2009894ba44e9e5016c495b5feb, type: 3}
       propertyPath: m_Sprite
@@ -738,6 +750,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Brick (7)
       objectReference: {fileID: 0}
+    - target: {fileID: 5891234994536302910, guid: fd18a2009894ba44e9e5016c495b5feb, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6327540719420737374, guid: fd18a2009894ba44e9e5016c495b5feb, type: 3}
       propertyPath: m_Sprite
       value: 
@@ -923,6 +939,10 @@ PrefabInstance:
     - target: {fileID: 5891234994536302910, guid: fd18a2009894ba44e9e5016c495b5feb, type: 3}
       propertyPath: m_Name
       value: Brick (12)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5891234994536302910, guid: fd18a2009894ba44e9e5016c495b5feb, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6327540719420737374, guid: fd18a2009894ba44e9e5016c495b5feb, type: 3}
       propertyPath: m_Sprite
@@ -1679,6 +1699,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Brick (8)
       objectReference: {fileID: 0}
+    - target: {fileID: 5891234994536302910, guid: fd18a2009894ba44e9e5016c495b5feb, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6327540719420737374, guid: fd18a2009894ba44e9e5016c495b5feb, type: 3}
       propertyPath: m_Sprite
       value: 
@@ -1948,11 +1972,11 @@ PolygonCollider2D:
   m_AutoTiling: 0
   m_Points:
     m_Paths:
-    - - {x: 0.0019557327, y: 0.22636922}
-      - {x: -0.32, y: 0.099999994}
+    - - {x: 0.0052305013, y: 0.34426183}
+      - {x: -0.5918079, y: 0.13929746}
       - {x: -0.32, y: -0.099999994}
       - {x: 0.32, y: -0.099999994}
-      - {x: 0.32, y: 0.099999994}
+      - {x: 0.59835744, y: 0.12292358}
   m_UseDelaunayMesh: 0
 --- !u!61 &386632903
 BoxCollider2D:
@@ -1988,7 +2012,7 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: -0.000000014901161, y: 0.00034986436}
+  m_Offset: {x: -0.0062417984, y: 0.004511118}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -1998,7 +2022,7 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 0.64588237, y: 0.21879727}
+  m_Size: {x: 1.1909988, y: 0.2437644}
   m_EdgeRadius: 0
 --- !u!50 &386632904
 Rigidbody2D:
@@ -2090,6 +2114,10 @@ PrefabInstance:
     - target: {fileID: 5891234994536302910, guid: fd18a2009894ba44e9e5016c495b5feb, type: 3}
       propertyPath: m_Name
       value: Brick (29)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5891234994536302910, guid: fd18a2009894ba44e9e5016c495b5feb, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6327540719420737374, guid: fd18a2009894ba44e9e5016c495b5feb, type: 3}
       propertyPath: m_Sprite
@@ -2341,6 +2369,10 @@ PrefabInstance:
     - target: {fileID: 5891234994536302910, guid: fd18a2009894ba44e9e5016c495b5feb, type: 3}
       propertyPath: m_Name
       value: Brick (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5891234994536302910, guid: fd18a2009894ba44e9e5016c495b5feb, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6327540719420737374, guid: fd18a2009894ba44e9e5016c495b5feb, type: 3}
       propertyPath: m_Sprite
@@ -2700,6 +2732,10 @@ PrefabInstance:
     - target: {fileID: 5891234994536302910, guid: fd18a2009894ba44e9e5016c495b5feb, type: 3}
       propertyPath: m_Name
       value: Brick (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5891234994536302910, guid: fd18a2009894ba44e9e5016c495b5feb, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6327540719420737374, guid: fd18a2009894ba44e9e5016c495b5feb, type: 3}
       propertyPath: m_Sprite
@@ -3161,6 +3197,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Brick (24)
       objectReference: {fileID: 0}
+    - target: {fileID: 5891234994536302910, guid: fd18a2009894ba44e9e5016c495b5feb, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6327540719420737374, guid: fd18a2009894ba44e9e5016c495b5feb, type: 3}
       propertyPath: m_Sprite
       value: 
@@ -3399,6 +3439,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Brick (13)
       objectReference: {fileID: 0}
+    - target: {fileID: 5891234994536302910, guid: fd18a2009894ba44e9e5016c495b5feb, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6327540719420737374, guid: fd18a2009894ba44e9e5016c495b5feb, type: 3}
       propertyPath: m_Sprite
       value: 
@@ -3485,7 +3529,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: asdasd
+  m_Text: 
 --- !u!222 &811993433
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -3576,6 +3620,10 @@ PrefabInstance:
     - target: {fileID: 5891234994536302910, guid: fd18a2009894ba44e9e5016c495b5feb, type: 3}
       propertyPath: m_Name
       value: Brick (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5891234994536302910, guid: fd18a2009894ba44e9e5016c495b5feb, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6327540719420737374, guid: fd18a2009894ba44e9e5016c495b5feb, type: 3}
       propertyPath: m_Sprite
@@ -3792,7 +3840,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: asdasd
+  m_Text: 
 --- !u!222 &889384391
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -4321,6 +4369,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Brick (9)
       objectReference: {fileID: 0}
+    - target: {fileID: 5891234994536302910, guid: fd18a2009894ba44e9e5016c495b5feb, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6327540719420737374, guid: fd18a2009894ba44e9e5016c495b5feb, type: 3}
       propertyPath: m_Color.b
       value: 0.1764706
@@ -4566,6 +4618,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Brick (30)
       objectReference: {fileID: 0}
+    - target: {fileID: 5891234994536302910, guid: fd18a2009894ba44e9e5016c495b5feb, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6327540719420737374, guid: fd18a2009894ba44e9e5016c495b5feb, type: 3}
       propertyPath: m_Sprite
       value: 
@@ -4700,6 +4756,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Brick (16)
       objectReference: {fileID: 0}
+    - target: {fileID: 5891234994536302910, guid: fd18a2009894ba44e9e5016c495b5feb, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6327540719420737374, guid: fd18a2009894ba44e9e5016c495b5feb, type: 3}
       propertyPath: m_Sprite
       value: 
@@ -4790,7 +4850,7 @@ CircleCollider2D:
   m_CompositeOperation: 0
   m_CompositeOrder: 0
   m_Offset: {x: 0, y: 0}
-  m_Radius: 0.04
+  m_Radius: 0.13280413
 --- !u!50 &1207456351
 Rigidbody2D:
   serializedVersion: 5
@@ -4882,7 +4942,7 @@ Transform:
   m_GameObject: {fileID: 1207456349}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.01, y: 0.292, z: 0}
+  m_LocalPosition: {x: 0.01, y: 0.52, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -4968,6 +5028,10 @@ PrefabInstance:
     - target: {fileID: 5891234994536302910, guid: fd18a2009894ba44e9e5016c495b5feb, type: 3}
       propertyPath: m_Name
       value: Brick (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5891234994536302910, guid: fd18a2009894ba44e9e5016c495b5feb, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6327540719420737374, guid: fd18a2009894ba44e9e5016c495b5feb, type: 3}
       propertyPath: m_Sprite
@@ -5085,6 +5149,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Brick (18)
       objectReference: {fileID: 0}
+    - target: {fileID: 5891234994536302910, guid: fd18a2009894ba44e9e5016c495b5feb, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6327540719420737374, guid: fd18a2009894ba44e9e5016c495b5feb, type: 3}
       propertyPath: m_Color.b
       value: 0.45882353
@@ -5175,6 +5243,10 @@ PrefabInstance:
     - target: {fileID: 5891234994536302910, guid: fd18a2009894ba44e9e5016c495b5feb, type: 3}
       propertyPath: m_Name
       value: Brick (33)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5891234994536302910, guid: fd18a2009894ba44e9e5016c495b5feb, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6327540719420737374, guid: fd18a2009894ba44e9e5016c495b5feb, type: 3}
       propertyPath: m_Sprite
@@ -5275,6 +5347,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Brick (28)
       objectReference: {fileID: 0}
+    - target: {fileID: 5891234994536302910, guid: fd18a2009894ba44e9e5016c495b5feb, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6327540719420737374, guid: fd18a2009894ba44e9e5016c495b5feb, type: 3}
       propertyPath: m_Sprite
       value: 
@@ -5373,6 +5449,10 @@ PrefabInstance:
     - target: {fileID: 5891234994536302910, guid: fd18a2009894ba44e9e5016c495b5feb, type: 3}
       propertyPath: m_Name
       value: Brick (25)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5891234994536302910, guid: fd18a2009894ba44e9e5016c495b5feb, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6327540719420737374, guid: fd18a2009894ba44e9e5016c495b5feb, type: 3}
       propertyPath: m_Sprite
@@ -5601,6 +5681,10 @@ PrefabInstance:
     - target: {fileID: 5891234994536302910, guid: fd18a2009894ba44e9e5016c495b5feb, type: 3}
       propertyPath: m_Name
       value: Brick (14)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5891234994536302910, guid: fd18a2009894ba44e9e5016c495b5feb, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6327540719420737374, guid: fd18a2009894ba44e9e5016c495b5feb, type: 3}
       propertyPath: m_Sprite
@@ -5956,14 +6040,14 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1512969567}
   m_CullTransparentMesh: 1
---- !u!1 &1554110568 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 5142394917656313076, guid: 0a8338858026a044687cf92697a1776c, type: 3}
-  m_PrefabInstance: {fileID: 6333159260648812922}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &1554110569 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5886420993573443225, guid: 0a8338858026a044687cf92697a1776c, type: 3}
+  m_PrefabInstance: {fileID: 6333159260648812922}
+  m_PrefabAsset: {fileID: 0}
+--- !u!212 &1554110570 stripped
+SpriteRenderer:
+  m_CorrespondingSourceObject: {fileID: 7822242895149169409, guid: 0a8338858026a044687cf92697a1776c, type: 3}
   m_PrefabInstance: {fileID: 6333159260648812922}
   m_PrefabAsset: {fileID: 0}
 --- !u!4 &1571341719 stripped
@@ -6022,7 +6106,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: asdasd
+  m_Text: 
 --- !u!222 &1572052567
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -6198,10 +6282,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   losePanel: {fileID: 349413184}
   winnerPanel: {fileID: 2052099410}
-  livesImg:
-  - {fileID: 1554110568}
-  - {fileID: 2021665300}
-  - {fileID: 1646190156}
+  lifeSprites:
+  - {fileID: 1554110570}
+  - {fileID: 2021665301}
+  - {fileID: 1646190158}
   gameTimeText: {fileID: 889384390}
   scoreText: {fileID: 1572052566}
   highScoreText: {fileID: 811993432}
@@ -6285,6 +6369,10 @@ PrefabInstance:
     - target: {fileID: 5891234994536302910, guid: fd18a2009894ba44e9e5016c495b5feb, type: 3}
       propertyPath: m_Name
       value: Brick (31)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5891234994536302910, guid: fd18a2009894ba44e9e5016c495b5feb, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6327540719420737374, guid: fd18a2009894ba44e9e5016c495b5feb, type: 3}
       propertyPath: m_Sprite
@@ -6385,6 +6473,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Brick (20)
       objectReference: {fileID: 0}
+    - target: {fileID: 5891234994536302910, guid: fd18a2009894ba44e9e5016c495b5feb, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6327540719420737374, guid: fd18a2009894ba44e9e5016c495b5feb, type: 3}
       propertyPath: m_Sprite
       value: 
@@ -6471,6 +6563,10 @@ PrefabInstance:
     - target: {fileID: 5891234994536302910, guid: fd18a2009894ba44e9e5016c495b5feb, type: 3}
       propertyPath: m_Name
       value: Brick (27)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5891234994536302910, guid: fd18a2009894ba44e9e5016c495b5feb, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6327540719420737374, guid: fd18a2009894ba44e9e5016c495b5feb, type: 3}
       propertyPath: m_Color.b
@@ -6641,6 +6737,10 @@ PrefabInstance:
     - target: {fileID: 5891234994536302910, guid: fd18a2009894ba44e9e5016c495b5feb, type: 3}
       propertyPath: m_Name
       value: Brick (22)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5891234994536302910, guid: fd18a2009894ba44e9e5016c495b5feb, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6327540719420737374, guid: fd18a2009894ba44e9e5016c495b5feb, type: 3}
       propertyPath: m_Sprite
@@ -6918,14 +7018,14 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0a8338858026a044687cf92697a1776c, type: 3}
---- !u!1 &1646190156 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 5142394917656313076, guid: 0a8338858026a044687cf92697a1776c, type: 3}
-  m_PrefabInstance: {fileID: 1646190155}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &1646190157 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5886420993573443225, guid: 0a8338858026a044687cf92697a1776c, type: 3}
+  m_PrefabInstance: {fileID: 1646190155}
+  m_PrefabAsset: {fileID: 0}
+--- !u!212 &1646190158 stripped
+SpriteRenderer:
+  m_CorrespondingSourceObject: {fileID: 7822242895149169409, guid: 0a8338858026a044687cf92697a1776c, type: 3}
   m_PrefabInstance: {fileID: 1646190155}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1653270051
@@ -6991,6 +7091,10 @@ PrefabInstance:
     - target: {fileID: 5891234994536302910, guid: fd18a2009894ba44e9e5016c495b5feb, type: 3}
       propertyPath: m_Name
       value: Brick (19)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5891234994536302910, guid: fd18a2009894ba44e9e5016c495b5feb, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6327540719420737374, guid: fd18a2009894ba44e9e5016c495b5feb, type: 3}
       propertyPath: m_Sprite
@@ -7090,6 +7194,10 @@ PrefabInstance:
     - target: {fileID: 5891234994536302910, guid: fd18a2009894ba44e9e5016c495b5feb, type: 3}
       propertyPath: m_Name
       value: Brick (23)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5891234994536302910, guid: fd18a2009894ba44e9e5016c495b5feb, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6327540719420737374, guid: fd18a2009894ba44e9e5016c495b5feb, type: 3}
       propertyPath: m_Sprite
@@ -7604,6 +7712,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Brick (11)
       objectReference: {fileID: 0}
+    - target: {fileID: 5891234994536302910, guid: fd18a2009894ba44e9e5016c495b5feb, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6327540719420737374, guid: fd18a2009894ba44e9e5016c495b5feb, type: 3}
       propertyPath: m_Sprite
       value: 
@@ -7966,6 +8078,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Brick (15)
       objectReference: {fileID: 0}
+    - target: {fileID: 5891234994536302910, guid: fd18a2009894ba44e9e5016c495b5feb, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6327540719420737374, guid: fd18a2009894ba44e9e5016c495b5feb, type: 3}
       propertyPath: m_Sprite
       value: 
@@ -8130,6 +8246,10 @@ PrefabInstance:
     - target: {fileID: 5891234994536302910, guid: fd18a2009894ba44e9e5016c495b5feb, type: 3}
       propertyPath: m_Name
       value: Brick (10)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5891234994536302910, guid: fd18a2009894ba44e9e5016c495b5feb, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6327540719420737374, guid: fd18a2009894ba44e9e5016c495b5feb, type: 3}
       propertyPath: m_Sprite
@@ -8338,6 +8458,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Brick (32)
       objectReference: {fileID: 0}
+    - target: {fileID: 5891234994536302910, guid: fd18a2009894ba44e9e5016c495b5feb, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6327540719420737374, guid: fd18a2009894ba44e9e5016c495b5feb, type: 3}
       propertyPath: m_Sprite
       value: 
@@ -8447,9 +8571,9 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 5886420993573443225, guid: 0a8338858026a044687cf92697a1776c, type: 3}
   m_PrefabInstance: {fileID: 2021665298}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &2021665300 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 5142394917656313076, guid: 0a8338858026a044687cf92697a1776c, type: 3}
+--- !u!212 &2021665301 stripped
+SpriteRenderer:
+  m_CorrespondingSourceObject: {fileID: 7822242895149169409, guid: 0a8338858026a044687cf92697a1776c, type: 3}
   m_PrefabInstance: {fileID: 2021665298}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &2022734287
@@ -8515,6 +8639,10 @@ PrefabInstance:
     - target: {fileID: 5891234994536302910, guid: fd18a2009894ba44e9e5016c495b5feb, type: 3}
       propertyPath: m_Name
       value: Brick (17)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5891234994536302910, guid: fd18a2009894ba44e9e5016c495b5feb, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6327540719420737374, guid: fd18a2009894ba44e9e5016c495b5feb, type: 3}
       propertyPath: m_Sprite
@@ -8787,6 +8915,10 @@ PrefabInstance:
     - target: {fileID: 5891234994536302910, guid: fd18a2009894ba44e9e5016c495b5feb, type: 3}
       propertyPath: m_Name
       value: Brick (34)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5891234994536302910, guid: fd18a2009894ba44e9e5016c495b5feb, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6327540719420737374, guid: fd18a2009894ba44e9e5016c495b5feb, type: 3}
       propertyPath: m_Sprite
@@ -9097,6 +9229,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Brick
       objectReference: {fileID: 0}
+    - target: {fileID: 5891234994536302910, guid: fd18a2009894ba44e9e5016c495b5feb, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -9165,6 +9301,10 @@ PrefabInstance:
     - target: {fileID: 5891234994536302910, guid: fd18a2009894ba44e9e5016c495b5feb, type: 3}
       propertyPath: m_Name
       value: Brick (21)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5891234994536302910, guid: fd18a2009894ba44e9e5016c495b5feb, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6327540719420737374, guid: fd18a2009894ba44e9e5016c495b5feb, type: 3}
       propertyPath: m_Sprite
@@ -9252,7 +9392,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: asdasd
+  m_Text: 
 --- !u!222 &2103120994
 CanvasRenderer:
   m_ObjectHideFlags: 0
