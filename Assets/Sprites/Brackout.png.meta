@@ -1,0 +1,715 @@
+fileFormatVersion: 2
+guid: 94b18aa04404ea244a56ec150869cdf3
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 3196215709985929967
+    second: Brackout_0
+  - first:
+      213: 4107929854075184868
+    second: Brackout_1
+  - first:
+      213: 4685196107267028470
+    second: Brackout_2
+  - first:
+      213: -9065806292095903062
+    second: Brackout_3
+  - first:
+      213: -8359958150104354566
+    second: Brackout_4
+  - first:
+      213: 5734861933430320141
+    second: Brackout_5
+  - first:
+      213: -8132707621477183080
+    second: Brackout_6
+  - first:
+      213: -3568913019860642187
+    second: Brackout_7
+  - first:
+      213: 4517935901714707982
+    second: Brackout_8
+  - first:
+      213: 97691592905556211
+    second: Brackout_9
+  - first:
+      213: -3132885365787221063
+    second: Brackout_10
+  - first:
+      213: 3365730556391660564
+    second: Brackout_11
+  - first:
+      213: 104646456469056322
+    second: Brackout_12
+  - first:
+      213: 6941917611799520298
+    second: Brackout_13
+  - first:
+      213: 2257065789551804731
+    second: Brackout_14
+  - first:
+      213: -3414927602780015947
+    second: Brackout_15
+  - first:
+      213: 7046100368748638649
+    second: Brackout_16
+  - first:
+      213: 9214185204825813202
+    second: Brackout_17
+  - first:
+      213: 909266353256835226
+    second: Brackout_18
+  - first:
+      213: -903325097215953022
+    second: Brackout_19
+  - first:
+      213: -1821401682620694792
+    second: Brackout_20
+  - first:
+      213: 6369706941554983726
+    second: Brackout_21
+  - first:
+      213: 5685476215985109496
+    second: Brackout_22
+  - first:
+      213: 700153311720590602
+    second: Brackout_23
+  - first:
+      213: -6890519360989845554
+    second: Brackout_24
+  - first:
+      213: 204825380715664577
+    second: Brackout_25
+  - first:
+      213: -8892076442181758046
+    second: Brackout_26
+  - first:
+      213: 5694207873999359705
+    second: Brackout_27
+  - first:
+      213: 6914273418108053212
+    second: Brackout_28
+  - first:
+      213: 8177594314300776680
+    second: Brackout_29
+  - first:
+      213: -7184346000928493806
+    second: Brackout_30
+  - first:
+      213: 3138977156582948327
+    second: Brackout_31
+  - first:
+      213: -3546508094861320044
+    second: Brackout_32
+  - first:
+      213: -1651403278926776739
+    second: Brackout_33
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 48
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Brackout_0
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 236
+        width: 28
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: feafb33014d3b5c20800000000000000
+      internalID: 3196215709985929967
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Brackout_1
+      rect:
+        serializedVersion: 2
+        x: 34
+        y: 236
+        width: 28
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4e6af52007c420930800000000000000
+      internalID: 4107929854075184868
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Brackout_2
+      rect:
+        serializedVersion: 2
+        x: 66
+        y: 236
+        width: 28
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6f5b1bc4909250140800000000000000
+      internalID: 4685196107267028470
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Brackout_3
+      rect:
+        serializedVersion: 2
+        x: 98
+        y: 236
+        width: 28
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aaa5f15c539cf2280800000000000000
+      internalID: -9065806292095903062
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Brackout_4
+      rect:
+        serializedVersion: 2
+        x: 130
+        y: 236
+        width: 28
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: af0f5edfa567bfb80800000000000000
+      internalID: -8359958150104354566
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Brackout_5
+      rect:
+        serializedVersion: 2
+        x: 162
+        y: 236
+        width: 28
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d0c260a3b82569f40800000000000000
+      internalID: 5734861933430320141
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Brackout_6
+      rect:
+        serializedVersion: 2
+        x: 194
+        y: 236
+        width: 28
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8919db7d181d22f80800000000000000
+      internalID: -8132707621477183080
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Brackout_7
+      rect:
+        serializedVersion: 2
+        x: 226
+        y: 236
+        width: 28
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 57690f0748ca87ec0800000000000000
+      internalID: -3568913019860642187
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Brackout_8
+      rect:
+        serializedVersion: 2
+        x: 375
+        y: 241
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e0670bbf3cee2be30800000000000000
+      internalID: 4517935901714707982
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Brackout_9
+      rect:
+        serializedVersion: 2
+        x: 401
+        y: 242
+        width: 143
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3f08da47cf11b5100800000000000000
+      internalID: 97691592905556211
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Brackout_21
+      rect:
+        serializedVersion: 2
+        x: 551
+        y: 241
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e2389b617beb56850800000000000000
+      internalID: 6369706941554983726
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Brackout_22
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 9
+        width: 290
+        height: 226
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8f979b8de7ed6ee40800000000000000
+      internalID: 5685476215985109496
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Brackout_23
+      rect:
+        serializedVersion: 2
+        x: 291
+        y: 185
+        width: 82
+        height: 50
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a0d4b693ab177b900800000000000000
+      internalID: 700153311720590602
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Brackout_24
+      rect:
+        serializedVersion: 2
+        x: 375
+        y: 7
+        width: 212
+        height: 228
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ec7af321625ff50a0800000000000000
+      internalID: -6890519360989845554
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Brackout_25
+      rect:
+        serializedVersion: 2
+        x: 292
+        y: 157
+        width: 66
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1c49a8a399fa7d200800000000000000
+      internalID: 204825380715664577
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Brackout_26
+      rect:
+        serializedVersion: 2
+        x: 291
+        y: 135
+        width: 40
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2a3132c869ff89480800000000000000
+      internalID: -8892076442181758046
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Brackout_27
+      rect:
+        serializedVersion: 2
+        x: 291
+        y: 117
+        width: 40
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9dec6f664e3e50f40800000000000000
+      internalID: 5694207873999359705
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Brackout_28
+      rect:
+        serializedVersion: 2
+        x: 291
+        y: 99
+        width: 40
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cd6a1465a0f64ff50800000000000000
+      internalID: 6914273418108053212
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Brackout_29
+      rect:
+        serializedVersion: 2
+        x: 295
+        y: 49
+        width: 54
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8e0e62db3b6ac7170800000000000000
+      internalID: 8177594314300776680
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Brackout_32
+      rect:
+        serializedVersion: 2
+        x: 294
+        y: 10
+        width: 62
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4906ebc8da548cec0800000000000000
+      internalID: -3546508094861320044
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Brackout_33
+      rect:
+        serializedVersion: 2
+        x: 317
+        y: 29
+        width: 15
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d5677a2a7790519e0800000000000000
+      internalID: -1651403278926776739
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 59c4d315e99fad4438dbfb2d66b42232
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Brackout_0: 3196215709985929967
+      Brackout_1: 4107929854075184868
+      Brackout_10: -3132885365787221063
+      Brackout_11: 3365730556391660564
+      Brackout_12: 104646456469056322
+      Brackout_13: 6941917611799520298
+      Brackout_14: 2257065789551804731
+      Brackout_15: -3414927602780015947
+      Brackout_16: 7046100368748638649
+      Brackout_17: 9214185204825813202
+      Brackout_18: 909266353256835226
+      Brackout_19: -903325097215953022
+      Brackout_2: 4685196107267028470
+      Brackout_20: -1821401682620694792
+      Brackout_21: 6369706941554983726
+      Brackout_22: 5685476215985109496
+      Brackout_23: 700153311720590602
+      Brackout_24: -6890519360989845554
+      Brackout_25: 204825380715664577
+      Brackout_26: -8892076442181758046
+      Brackout_27: 5694207873999359705
+      Brackout_28: 6914273418108053212
+      Brackout_29: 8177594314300776680
+      Brackout_3: -9065806292095903062
+      Brackout_30: -7184346000928493806
+      Brackout_31: 3138977156582948327
+      Brackout_32: -3546508094861320044
+      Brackout_33: -1651403278926776739
+      Brackout_4: -8359958150104354566
+      Brackout_5: 5734861933430320141
+      Brackout_6: -8132707621477183080
+      Brackout_7: -3568913019860642187
+      Brackout_8: 4517935901714707982
+      Brackout_9: 97691592905556211
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
