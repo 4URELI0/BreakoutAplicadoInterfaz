@@ -14,6 +14,10 @@ public class UIController : MonoBehaviour
     [SerializeField] Text scoreText;
     [SerializeField] Text highScoreText;
     [SerializeField] Text bestTimeText;
+
+    [SerializeField] Text comboText;
+    [SerializeField] Text comboTimeText;
+    
     [SerializeField] AudioClip buttonPress;
 
     // Actualiza el tiempo de la partida en pantalla
@@ -110,5 +114,24 @@ public class UIController : MonoBehaviour
     {
         SceneManager.LoadScene("MainMenu");
         FindObjectOfType<AudioController>().PlaySfx(buttonPress);
+    }
+    public void UpdateCombo(int multiplier, bool isActive) 
+    {
+        if (isActive)
+        {
+            comboText.text = "x" + multiplier;
+        }
+        else
+        {
+            comboText.text = "";
+        }
+    }
+    public void UpdateComboTimer(float timeLeft) 
+    {
+        comboTimeText.text = timeLeft.ToString("0.0") + "s";
+    }
+    public void ClearComboTimer()
+    {
+        comboTimeText.text = "";
     }
 }
