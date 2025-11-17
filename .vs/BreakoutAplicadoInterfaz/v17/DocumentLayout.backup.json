@@ -3,24 +3,28 @@
   "WorkspaceRootPath": "C:\\Users\\CRISTIAN\\Desktop\\Unity\\BreakoutAplicadoInterfaz\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{4FF1500C-1445-928B-46C3-D0DE853AD3E8}|Assembly-CSharp.csproj|c:\\users\\cristian\\desktop\\unity\\breakoutaplicadointerfaz\\assets\\scripts\\menuopciones.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4FF1500C-1445-928B-46C3-D0DE853AD3E8}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\menuopciones.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4FF1500C-1445-928B-46C3-D0DE853AD3E8}|Assembly-CSharp.csproj|c:\\users\\cristian\\desktop\\unity\\breakoutaplicadointerfaz\\assets\\scripts\\ball.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4FF1500C-1445-928B-46C3-D0DE853AD3E8}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\ball.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4FF1500C-1445-928B-46C3-D0DE853AD3E8}|Assembly-CSharp.csproj|C:\\Users\\CRISTIAN\\Desktop\\Unity\\BreakoutAplicadoInterfaz\\assets\\scripts\\paddle.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4FF1500C-1445-928B-46C3-D0DE853AD3E8}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\paddle.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{4FF1500C-1445-928B-46C3-D0DE853AD3E8}|Assembly-CSharp.csproj|C:\\Users\\CRISTIAN\\Desktop\\Unity\\BreakoutAplicadoInterfaz\\assets\\scripts\\gamemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{4FF1500C-1445-928B-46C3-D0DE853AD3E8}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\gamemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{4FF1500C-1445-928B-46C3-D0DE853AD3E8}|Assembly-CSharp.csproj|C:\\Users\\CRISTIAN\\Desktop\\Unity\\BreakoutAplicadoInterfaz\\assets\\scripts\\uicontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{4FF1500C-1445-928B-46C3-D0DE853AD3E8}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\uicontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4FF1500C-1445-928B-46C3-D0DE853AD3E8}|Assembly-CSharp.csproj|C:\\Users\\CRISTIAN\\Desktop\\Unity\\BreakoutAplicadoInterfaz\\assets\\scripts\\ball.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4FF1500C-1445-928B-46C3-D0DE853AD3E8}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\ball.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4FF1500C-1445-928B-46C3-D0DE853AD3E8}|Assembly-CSharp.csproj|c:\\users\\cristian\\desktop\\unity\\breakoutaplicadointerfaz\\assets\\scripts\\paddle.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4FF1500C-1445-928B-46C3-D0DE853AD3E8}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\paddle.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4FF1500C-1445-928B-46C3-D0DE853AD3E8}|Assembly-CSharp.csproj|C:\\Users\\CRISTIAN\\Desktop\\Unity\\BreakoutAplicadoInterfaz\\assets\\scripts\\brick.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4FF1500C-1445-928B-46C3-D0DE853AD3E8}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\brick.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4FF1500C-1445-928B-46C3-D0DE853AD3E8}|Assembly-CSharp.csproj|C:\\Users\\CRISTIAN\\Desktop\\Unity\\BreakoutAplicadoInterfaz\\assets\\scripts\\menuopciones.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4FF1500C-1445-928B-46C3-D0DE853AD3E8}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\menuopciones.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -30,69 +34,83 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 4,
+              "Title": "Brick.cs",
+              "DocumentMoniker": "C:\\Users\\CRISTIAN\\Desktop\\Unity\\BreakoutAplicadoInterfaz\\Assets\\Scripts\\Brick.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Brick.cs",
+              "ToolTip": "C:\\Users\\CRISTIAN\\Desktop\\Unity\\BreakoutAplicadoInterfaz\\Assets\\Scripts\\Brick.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Brick.cs",
+              "ViewState": "AgIAAA0AAAAAAAAAAAAQwCwAAAApAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-17T07:57:22.722Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
               "Title": "MenuOpciones.cs",
               "DocumentMoniker": "C:\\Users\\CRISTIAN\\Desktop\\Unity\\BreakoutAplicadoInterfaz\\Assets\\Scripts\\MenuOpciones.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\MenuOpciones.cs",
               "ToolTip": "C:\\Users\\CRISTIAN\\Desktop\\Unity\\BreakoutAplicadoInterfaz\\Assets\\Scripts\\MenuOpciones.cs",
               "RelativeToolTip": "Assets\\Scripts\\MenuOpciones.cs",
-              "ViewState": "AgIAAAoAAAAAAAAAAAAzwAAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAAwAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-17T06:20:21.613Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-17T06:20:21.613Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "Ball.cs",
               "DocumentMoniker": "C:\\Users\\CRISTIAN\\Desktop\\Unity\\BreakoutAplicadoInterfaz\\Assets\\Scripts\\Ball.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Ball.cs",
               "ToolTip": "C:\\Users\\CRISTIAN\\Desktop\\Unity\\BreakoutAplicadoInterfaz\\Assets\\Scripts\\Ball.cs",
               "RelativeToolTip": "Assets\\Scripts\\Ball.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAEkAAABxAAAAAAAAAA==",
+              "ViewState": "AgIAAEEAAAAAAAAAAAAgwDsAAABGAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-11-16T07:16:08.01Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 1,
               "Title": "UIController.cs",
               "DocumentMoniker": "C:\\Users\\CRISTIAN\\Desktop\\Unity\\BreakoutAplicadoInterfaz\\Assets\\Scripts\\UIController.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\UIController.cs",
               "ToolTip": "C:\\Users\\CRISTIAN\\Desktop\\Unity\\BreakoutAplicadoInterfaz\\Assets\\Scripts\\UIController.cs",
               "RelativeToolTip": "Assets\\Scripts\\UIController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAADMAAAAJAAAAAAAAAA==",
+              "ViewState": "AgIAAGMAAAAAAAAAAAAywBEAAAAjAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-16T00:18:14.546Z"
+              "WhenOpened": "2025-11-16T00:18:14.546Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 0,
               "Title": "GameManager.cs",
               "DocumentMoniker": "C:\\Users\\CRISTIAN\\Desktop\\Unity\\BreakoutAplicadoInterfaz\\Assets\\Scripts\\GameManager.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\GameManager.cs",
               "ToolTip": "C:\\Users\\CRISTIAN\\Desktop\\Unity\\BreakoutAplicadoInterfaz\\Assets\\Scripts\\GameManager.cs",
               "RelativeToolTip": "Assets\\Scripts\\GameManager.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAE0AAAANAAAAAAAAAA==",
+              "ViewState": "AgIAAJkAAAAAAAAAAAAAwLEAAABZAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-15T19:59:53.366Z"
+              "WhenOpened": "2025-11-15T19:59:53.366Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "Paddle.cs",
               "DocumentMoniker": "C:\\Users\\CRISTIAN\\Desktop\\Unity\\BreakoutAplicadoInterfaz\\Assets\\Scripts\\Paddle.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Paddle.cs",
               "ToolTip": "C:\\Users\\CRISTIAN\\Desktop\\Unity\\BreakoutAplicadoInterfaz\\Assets\\Scripts\\Paddle.cs",
               "RelativeToolTip": "Assets\\Scripts\\Paddle.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAG4AAAABAAAAAAAAAA==",
+              "ViewState": "AgIAABEAAAAAAAAAAAAAwAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-16T07:32:44.924Z"
+              "WhenOpened": "2025-11-16T07:32:44.924Z",
+              "EditorCaption": ""
             }
           ]
         }

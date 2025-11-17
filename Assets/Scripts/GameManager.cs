@@ -1,7 +1,10 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Diagnostics;
+using Unity.Hierarchy;
 using UnityEngine;
-
+using System;
+using Debug = UnityEngine.Debug;
 public class GameManager : MonoBehaviour
 {
     [SerializeField] byte bricksOnLevel;
@@ -22,6 +25,24 @@ public class GameManager : MonoBehaviour
 
     public static int finalScore;
     public static int finalTime;
+
+    public bool comboActive = false;
+    public int comboMultiplier = 1;
+    [SerializeField] float comboDuration;
+    float comboTimer = 0;
+    int blocksInCombo = 0;
+
+    public void BlockDestroyed() 
+    {
+        blocksInCombo++;
+        comboTimer = comboDuration;
+        if (blocksInCombo >= 2)
+        {
+            comboActive = true;
+            comboMultiplier = blocksInCombo;
+            FindObjectOfType<UIController>().UpdateCombo(comboMultiplier, comboActive);
+        }
+    }
 
     public byte BricksOnLevel
     {
@@ -144,6 +165,19 @@ public class GameManager : MonoBehaviour
         {
             timer += Time.deltaTime;
             FindObjectOfType<UIController>().UpdateGameTimeUI(timer);
+        }
+        if (comboActive)
+        {
+            comboTimer -= Time.deltaTime;
+            FindObjectOfType<UIController>().UpdateComboTimer(comboTimer);
+            if (comboTimer <= 0f)
+            {
+                comboActive = false;
+                comboMultiplier = 1;
+                blocksInCombo = 0;
+                FindObjectOfType<UIController>().UpdateCombo(comboMultiplier, comboActive);
+                FindObjectOfType<UIController>().UpdateComboTimer(0f);
+            }
         }
     }
 

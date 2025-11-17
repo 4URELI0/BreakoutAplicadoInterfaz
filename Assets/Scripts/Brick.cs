@@ -8,6 +8,7 @@ public class Brick : MonoBehaviour
     GameManager gameManager;
     [SerializeField] GameObject explosionPrefab;
     [SerializeField] GameObject[] powerUpPrefabs;
+    [SerializeField] int basePoint = 10;
 
     private void Start()
     {
@@ -37,6 +38,13 @@ public class Brick : MonoBehaviour
                 Instantiate(powerUpPrefabs[powerUpRandom], transform.position, Quaternion.identity);
             }
         }
-        Destroy(gameObject);
+        if (collision.gameObject.CompareTag("Ball"))
+        {
+            int finalPoints = basePoint * gameManager.comboMultiplier;
+            gameManager.AddScore(finalPoints);
+            gameManager.BlockDestroyed();
+            Destroy(gameObject);
+        }
+        
     }
 }

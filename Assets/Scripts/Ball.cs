@@ -31,13 +31,11 @@ public class Ball : MonoBehaviour
     }
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        Debug.Log("La bola colisiono con: " + collision.transform.name);
         moveDirection = Vector2.Reflect(currentVelocity, collision.GetContact(0).normal);
         rigidBody2D.linearVelocity = moveDirection;
 
         if (collision.transform.CompareTag("LimiteMuerte"))
         {
-            Debug.Log("Colision con el limite MUERTE");
             FindObjectOfType<AudioController>().PlaySfx(loseLife);
 
             // Asegurarnos de tener referencia al GameManager
@@ -60,12 +58,10 @@ public class Ball : MonoBehaviour
         if (collision.transform.CompareTag("Player"))
         {
             FindObjectOfType<AudioController>().PlaySfx(paddleBounce);
-            Debug.Log("verificacion de clip");
         }
         if (collision.transform.CompareTag("Brick"))
         {
             FindObjectOfType<AudioController>().PlaySfx(bounce);
-            Debug.Log("Clip de brick");
         }
     }
     public void LaunchBall()
