@@ -378,7 +378,7 @@ TextureImporter:
       name: Brackout_8
       rect:
         serializedVersion: 2
-        x: 376
+        x: 428
         y: 241
         width: 18
         height: 18
@@ -400,7 +400,7 @@ TextureImporter:
       name: Brackout_9
       rect:
         serializedVersion: 2
-        x: 402
+        x: 454
         y: 242
         width: 142
         height: 16
@@ -422,7 +422,7 @@ TextureImporter:
       name: Brackout_21
       rect:
         serializedVersion: 2
-        x: 552
+        x: 604
         y: 241
         width: 18
         height: 18
@@ -656,6 +656,94 @@ TextureImporter:
       bones: []
       spriteID: d5677a2a7790519e0800000000000000
       internalID: -1651403278926776739
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Brackout_10
+      rect:
+        serializedVersion: 2
+        x: 296
+        y: 49
+        width: 18
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f5cbba4c9c5d72f49a40287f2764012a
+      internalID: -3132885365787221063
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Brackout_11
+      rect:
+        serializedVersion: 2
+        x: 296
+        y: 49
+        width: 18
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7dc4e74ddb3b9bd49a3af7a1b21960b7
+      internalID: 3365730556391660564
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Brackout_12
+      rect:
+        serializedVersion: 2
+        x: 297
+        y: 61
+        width: 24
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ed0928d897b2043449d9be8f4abb69a4
+      internalID: 104646456469056322
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Brackout_13
+      rect:
+        serializedVersion: 2
+        x: 297
+        y: 240
+        width: 124
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 68da9e45bc2017e48a79eb9b1a2fb1f6
+      internalID: 6941917611799520298
       vertices: []
       indices: 
       edges: []

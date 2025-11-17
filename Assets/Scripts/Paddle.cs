@@ -12,12 +12,26 @@ public class Paddle : MonoBehaviour
     [SerializeField] float speedPU = 50.5f;
     [SerializeField] byte timeBigSize = 10;//Para modificar el tiempo en la ventana inspector la velocidad del powerUp
     [SerializeField] byte timeBigSpeed = 10;//Para modificar el tiempo en la ventana inspector la velocidad del power ups
-   
-    
+    [SerializeField] Transform trasnChildren;
+
+    [SerializeField] GameObject[] arrayLives;
+
+
+    // Referencia al SpriteRenderer
+    private SpriteRenderer childSpriteRenderer;
+
+    // El sprite del hijo
+    public Sprite originalSprite;
+    // El sprite del hijo
+    public Sprite newSprite;
+
+
     private void Start()
     {
         gameManager = FindObjectOfType<GameManager>();
-       
+        // Obtener el SpriteRenderer del primer hijo (índice 0)
+        childSpriteRenderer = transform.GetChild(0).GetComponent<SpriteRenderer>();
+        originalSprite = childSpriteRenderer.sprite;
     }
 
     void Update()
@@ -76,20 +90,33 @@ public class Paddle : MonoBehaviour
    {
         float originalXLimit = xLimit;//Guardamos el limite original en una variable local
         xLimit = xLimitWhenBig;//Indicamos que el nuevo limit sera el valor de xLimitWhenBig
+
+        // Cambia el sprite del hijo
+        childSpriteRenderer.sprite = newSprite;
+        arrayLives[0].SetActive(false);
+        arrayLives[1].SetActive(true);
+
         //Incrementar de tamaño
-        Vector3 newSize = transform.localScale;//Un vector3 que almacena el tamaño actual del paddle
-        while (transform.localScale.x < 5.5f)//Un while que toma el eje X del newSize y lo incrementa mientras el valor sea menor a 1.5
+        Vector3 newSize = trasnChildren.localScale;//Un vector3 que almacena el tamaño actual del paddle
+        while (trasnChildren.localScale.x< 4f)//Un while que toma el eje X del newSize y lo incrementa mientras el valor sea menor a 1.5
         {
             newSize.x += Time.deltaTime;//Utilizamos un deltaTime para que su animación sea fluida en el incremento
-            transform.localScale = newSize;//Luego asignamos el valor actualizado a la scala del paddle
+            trasnChildren.localScale = newSize;//Luego asignamos el valor actualizado a la scala del paddle
         }
         yield return new WaitForSeconds(timeBigSize);
         //Reducir a su tamaño original
-        while (transform.localScale.x > 3)
+        while (trasnChildren.localScale.x > 2)
         {
             newSize.x -= Time.deltaTime;
-            transform.localScale = newSize;
+            trasnChildren.localScale = newSize;
         }
+
+
+        arrayLives[1].SetActive(false);
+        arrayLives[0].SetActive(true);
+
+        childSpriteRenderer.sprite = originalSprite;
+
         gameManager.bigSize = false;//Indicamos que el paddle ya no tiene el power up
         xLimit = originalXLimit;//Una vez terminado los efectos del power Up este volvera a su tamanio original
    }
@@ -99,13 +126,11 @@ public class Paddle : MonoBehaviour
         //Aumentar la velocidad del paddle
         float originalSpeed = speed;
         speed = speedPU;
-        Debug.Log("Aumento de velocidad activado");
         yield return new WaitForSeconds(timeBigSpeed);
         //Disminuir la velocidad del paddle
         speed = originalSpeed;
         
         gameManager.bigSpeed = false;
-        Debug.Log("Aumento de velocidad desactivado");
     }
     
 }

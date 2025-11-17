@@ -9,6 +9,7 @@ public class UIController : MonoBehaviour
     [SerializeField] GameObject losePanel;
     [SerializeField] GameObject winnerPanel;
     [SerializeField] SpriteRenderer[] lifeSprites;
+    [SerializeField] SpriteRenderer[] lifeSprites2;
     [SerializeField] Text gameTimeText;
     [SerializeField] Text scoreText;
     [SerializeField] Text highScoreText;
@@ -49,10 +50,12 @@ public class UIController : MonoBehaviour
         for (int i = 0; i < lifeSprites.Length; i++)
         {
             lifeSprites[i].color = Color.green;
+            lifeSprites2[i].color = Color.green;
         }
         for (int i = currentLives; i < lifeSprites.Length; i++)
         {
             lifeSprites[i].color = Color.red;
+            lifeSprites2[i].color = Color.red;
         }
     }
 
