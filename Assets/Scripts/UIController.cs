@@ -117,21 +117,19 @@ public class UIController : MonoBehaviour
     }
     public void UpdateCombo(int multiplier, bool isActive) 
     {
-        if (isActive)
+        if (multiplier > 1)
         {
-            comboText.text = "x" + multiplier;
+            comboText.text = multiplier + "x";
+            comboText.gameObject.SetActive(true);
         }
         else
         {
-            comboText.text = "";
+            comboText.text = "1x";
+            comboText.gameObject.SetActive(true);
         }
     }
     public void UpdateComboTimer(float timeLeft) 
     {
         comboTimeText.text = timeLeft.ToString("0.0") + "s";
-    }
-    public void ClearComboTimer()
-    {
-        comboTimeText.text = "";
     }
 }

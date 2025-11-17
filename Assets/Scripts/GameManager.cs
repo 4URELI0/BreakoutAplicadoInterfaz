@@ -175,8 +175,8 @@ public class GameManager : MonoBehaviour
                 comboActive = false;
                 comboMultiplier = 1;
                 blocksInCombo = 0;
-                FindObjectOfType<UIController>().UpdateCombo(1, false);
-                FindObjectOfType<UIController>().ClearComboTimer();
+                FindObjectOfType<UIController>().UpdateCombo(comboMultiplier, comboActive);
+                FindObjectOfType<UIController>().UpdateComboTimer(0f);
             }
         }
     }
