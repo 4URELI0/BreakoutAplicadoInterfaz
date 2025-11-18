@@ -16,8 +16,9 @@ public class UIController : MonoBehaviour
     [SerializeField] Text bestTimeText;
 
     [SerializeField] Text comboText;
-    [SerializeField] Text comboTimeText;
-    
+    //[SerializeField] Text comboTimeText;
+    [SerializeField] Slider sliderCircle;
+
     [SerializeField] AudioClip buttonPress;
 
     // Actualiza el tiempo de la partida en pantalla
@@ -121,15 +122,28 @@ public class UIController : MonoBehaviour
         {
             comboText.text = multiplier + "x";
             comboText.gameObject.SetActive(true);
+            sliderCircle.gameObject.SetActive(true);
         }
         else
         {
             comboText.text = "1x";
             comboText.gameObject.SetActive(true);
+            sliderCircle.gameObject.SetActive(true);
         }
     }
     public void UpdateComboTimer(float timeLeft) 
     {
-        comboTimeText.text = timeLeft.ToString("0.0") + "s";
+        if(timeLeft >0)
+        {
+            //comboTimeText.text = timeLeft.ToString("0.0") + "s";
+            sliderCircle.value = timeLeft;
+
+        }
+        else
+        {
+            // Si el multiplicador es 0, desactivamos el comboText
+            comboText.gameObject.SetActive(false);
+            sliderCircle.gameObject.SetActive(false);
+        }
     }
 }
