@@ -445,9 +445,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 1
-        y: 9
+        y: 0
         width: 291
-        height: 226
+        height: 235
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -468,7 +468,7 @@ TextureImporter:
         serializedVersion: 2
         x: 293
         y: 185
-        width: 80
+        width: 76
         height: 50
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -488,9 +488,9 @@ TextureImporter:
       name: Brackout_24
       rect:
         serializedVersion: 2
-        x: 376
+        x: 371
         y: 7
-        width: 212
+        width: 210
         height: 228
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -532,7 +532,7 @@ TextureImporter:
       name: Brackout_26
       rect:
         serializedVersion: 2
-        x: 292
+        x: 583
         y: 135
         width: 40
         height: 18
@@ -554,7 +554,7 @@ TextureImporter:
       name: Brackout_27
       rect:
         serializedVersion: 2
-        x: 292
+        x: 583
         y: 117
         width: 40
         height: 18
@@ -576,7 +576,7 @@ TextureImporter:
       name: Brackout_28
       rect:
         serializedVersion: 2
-        x: 292
+        x: 583
         y: 99
         width: 40
         height: 18
@@ -735,7 +735,7 @@ TextureImporter:
         width: 124
         height: 20
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -744,6 +744,50 @@ TextureImporter:
       bones: []
       spriteID: 68da9e45bc2017e48a79eb9b1a2fb1f6
       internalID: 6941917611799520298
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Brackout_14
+      rect:
+        serializedVersion: 2
+        x: 259
+        y: 235
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e6b11159fdae2d848a13aec5a88cfe99
+      internalID: 2257065789551804731
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Brackout_15
+      rect:
+        serializedVersion: 2
+        x: 293
+        y: 102
+        width: 76
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0f2349effcec8b643b7a1cac534f46da
+      internalID: -3414927602780015947
       vertices: []
       indices: 
       edges: []
